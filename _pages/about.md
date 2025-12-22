@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 MONT 422</p>
+    <p>MONT 422</p>
     <p>341 Mansfield Rd</p>
     <p>Storrs, Connecticut 12345</p>
     
