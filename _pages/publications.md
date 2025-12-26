@@ -7,14 +7,9 @@ nav: true
 nav_order: 3
 ---
 
-<!-- _pages/publications.md -->
+### Publications:
+1. [Distribution of the number of zeros of polynomials over a finite field](https://arxiv.org/abs/2308.14580) <br /> (Involve, 18-4, 707-718, 2025). DOI: [https://doi.org/10.2140/involve.2025.18.707](https://doi.org/10.2140/involve.2025.18.707).
+   
+### Preprints:
+1. [The number of solutions of a random system of polynomials over a finite field](https://arxiv.org/abs/2409.06866), <br /> **preprint** (2025).
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
