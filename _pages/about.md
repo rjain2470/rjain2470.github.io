@@ -26,6 +26,6 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Hello! My name is Ritik, and I am a second year PhD student in mathematics at the [University of Connecticut](https://uconn.edu/). Before UConn, I studied applied mathematics at [Fordham University](https://www.fordham.edu/), and graduated summa cum laude in Spring 2024. My research interests are in number theory, machine learning, and formal mathematics. 
+Hello! My name is Ritik, and I am a second year PhD student in mathematics at the [University of Connecticut](https://uconn.edu/). In December 2025, I earned my master's degree en route to my PhD. Before UConn, I studied applied mathematics at [Fordham University](https://www.fordham.edu/), graduating *summa cum laude* in Spring 2024. My research interests are in number theory, machine learning, and formal mathematics. 
 
 You can contact me via email at <a href="mailto:ritik.jain@uconn.edu">ritik.jain@uconn.edu</a>.
