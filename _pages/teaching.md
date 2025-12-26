@@ -11,8 +11,8 @@ nav_order: 5
 <!-- ## Courses Taught -->
 
 **University of Connecticut**
-* Spring 2026: MATH 1132Q: Calculus I (TA)
-* Fall 2025: MATH 1132Q: Calculus I (TA)
-* Spring 2025: MATH 1132Q: Calculus II (TA)
-* Fall 2024: MATH 1070Q: Math for Business and Economics (TA)
 
+- Spring 2026: MATH 1132Q: Calculus I (TA)
+- Fall 2025: MATH 1132Q: Calculus I (TA)
+- Spring 2025: MATH 1132Q: Calculus II (TA)
+- Fall 2024: MATH 1070Q: Math for Business and Economics (TA)
