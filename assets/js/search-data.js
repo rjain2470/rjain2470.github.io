@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Here is a list of courses that I have taught or TA&#39;ed for. As a TA at UConn, my responsibilities have included teaching 50-minute recitations, holding office hours, and proctoring/grading quizzes and exams.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
