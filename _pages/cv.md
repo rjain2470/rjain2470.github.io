@@ -1,11 +1,10 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: cv
 nav: true
 nav_order: 2
-cv_pdf: # example_pdf.pdf (you can also use external links here)
 description: TBA
 toc:
-  sidebar: left
+# cv_pdf: example_pdf.pdf (you can also use external links here)
 ---
