@@ -14,8 +14,7 @@ profile:
     <p>Storrs, Connecticut 06269.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-
+social: false # Add for socials
 announcements:
   enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
