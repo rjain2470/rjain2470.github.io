@@ -25,7 +25,7 @@
       "startDate": "Aug. 2024",
       "endDate": "Present"
     },
-    
+
     {
       "institution": "University of Connecticut",
       "location": "Storrs, Connecticut",
@@ -35,7 +35,7 @@
       "endDate": "Dec. 2025",
       "score": "3.9"
     },
-    
+
     {
       "institution": "Fordham University",
       "location": "New York, New York",
@@ -77,7 +77,7 @@
     }
   ],
 
-    "teaching": [
+  "teaching": [
     {
       "institution": "University of Connecticut",
       "role": "Teaching Assistant",
@@ -96,10 +96,7 @@
       "startDate": "Aug. 2024",
       "endDate": "Present",
       "summary": "Graduate research and teaching assistant in mathematics.",
-      "highlights": [
-        "X",
-        "X"
-      ]
+      "highlights": ["X", "X"]
     },
 
     {
@@ -108,32 +105,26 @@
       "position": "Research Assistant",
       "startDate": "May 2023",
       "endDate": "Aug. 2023",
-      "highlights": [
-        "X"
-      ]
+      "highlights": ["X"]
     },
-    
+
     {
       "name": "Rogo",
       "location": "New York, NY",
       "position": "Intern — Data & Analytics",
       "startDate": "Aug. 2022",
       "endDate": "May 2023",
-      "highlights": [
-        "X"
-      ]
+      "highlights": ["X"]
     },
-    
+
     {
       "name": "Steel Key Capital",
       "location": "New York, NY",
       "position": "Intern — Financial Analysis",
       "startDate": "Jan. 2022",
       "endDate": "Aug. 2022",
-      "highlights": [
-        "X"
-      ]
-    },
+      "highlights": ["X"]
+    }
   ],
 
   "skills": [
