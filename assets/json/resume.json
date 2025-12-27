@@ -4,8 +4,8 @@
       "location": "Storrs, Connecticut",
       "area": "Mathematics",
       "studyType": "PhD",
-      "startDate": "Present",
-      "order": "1"
+      "startDate": "08-2024",
+      "order": 1
     },
 
     {
@@ -16,7 +16,7 @@
       "startDate": "08-2024",
       "endDate": "12-2025",
       "score": "3.9",
-      "order": "2"
+      "order": 2
     },
 
     {
@@ -28,7 +28,7 @@
       "endDate": "05-2024",
       "score": "3.97",
       "honors": ["summa cum laude"],
-      "order": "3"
+      "order": 3
     }
   ],
 
