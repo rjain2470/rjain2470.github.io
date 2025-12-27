@@ -104,16 +104,8 @@
       "role": "Teaching Assistant",
       "startDate": "August 2024",
       "endDate": "Present",
-      "courses": [
-        "Math for Business and Economics (Fall 2024, Summer 2025)",
-        "Calculus II (Spring 2025)",
-        "Calculus I (Fall 2025, Spring 2026)"
-      ],
-      "responsibilities": [
-        "Led discussion sections for 90–100 students",
-        "Graded exams and assignments",
-        "Held regular office hours"
-      ]
+      "courses": ["Math for Business and Economics (Fall 2024, Summer 2025)", "Calculus II (Spring 2025)", "Calculus I (Fall 2025, Spring 2026)"],
+      "responsibilities": ["Led discussion sections for 90–100 students", "Graded exams and assignments", "Held regular office hours"]
     }
   ],
 
@@ -157,14 +149,7 @@
     },
     {
       "name": "Core Skills",
-      "keywords": [
-        "Statistics",
-        "Machine Learning",
-        "Data Science",
-        "Financial Engineering",
-        "Leadership",
-        "Collaboration"
-      ]
+      "keywords": ["Statistics", "Machine Learning", "Data Science", "Financial Engineering", "Leadership", "Collaboration"]
     }
   ]
 }
