@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/
 title: blog
 nav: false # Remove blog link from the top of page
-nav_order: 6
+# nav_order: 6
 pagination:
   enabled: true
   collection: posts
