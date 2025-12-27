@@ -6,7 +6,7 @@ nav_order: 8
 dropdown: true
 children:
   - title: blog
-    permalink: /writings/
+    permalink: /blog/
   - title: divider
   - title: bookshelf
     permalink: /books/
