@@ -22,7 +22,7 @@
       "location": "Storrs, Connecticut",
       "area": "Mathematics",
       "studyType": "PhD",
-      "startDate": "Aug. 2024",
+      "startDate": "2024-08",
       "score": "3.9"
     },
 
@@ -31,8 +31,8 @@
       "location": "Storrs, Connecticut",
       "area": "Mathematics",
       "studyType": "MS",
-      "startDate": "Aug. 2024",
-      "endDate": "Dec. 2025",
+      "startDate": "2024-08",
+      "endDate": "2025-12",
       "score": "3.9"
     },
 
@@ -41,8 +41,8 @@
       "location": "New York, New York",
       "area": "Applied Mathematics",
       "studyType": "BS",
-      "startDate": "Aug. 2021",
-      "endDate": "May 2024",
+      "startDate": "2021-08",
+      "endDate": "2024-05",
       "score": "3.97",
       "honors": ["summa cum laude"]
     }
@@ -81,10 +81,17 @@
     {
       "institution": "University of Connecticut",
       "role": "Teaching Assistant",
-      "startDate": "Aug. 2024",
-      "endDate": "Present",
-      "courses": ["Math for Business and Economics (Fall 2024, Summer 2025)", "Calculus II (Spring 2025)", "Calculus I (Fall 2025, Spring 2026)"],
-      "responsibilities": ["Led discussion sections for 90–100 students", "Graded exams and assignments", "Held regular office hours"]
+      "startDate": "2024-08",
+      "courses": [
+        "Math for Business and Economics (Fall 2024, Summer 2025)",
+        "Calculus II (Spring 2025)",
+        "Calculus I (Fall 2025, Spring 2026)"
+      ],
+      "responsibilities": [
+        "Led discussion sections for 90–100 students",
+        "Graded exams and assignments",
+        "Held regular office hours"
+      ]
     }
   ],
 
@@ -93,8 +100,7 @@
       "name": "University of Connecticut",
       "location": "Storrs, CT",
       "position": "Graduate Assistant",
-      "startDate": "Aug. 2024",
-      "endDate": "Present",
+      "startDate": "2024-08",
       "summary": "Graduate research and teaching assistant in mathematics.",
       "highlights": ["X", "X"]
     },
@@ -103,8 +109,8 @@
       "name": "Fordham University",
       "location": "New York, NY",
       "position": "Research Assistant",
-      "startDate": "May 2023",
-      "endDate": "Aug. 2023",
+      "startDate": "2023-05",
+      "endDate": "2023-08",
       "highlights": ["X"]
     },
 
@@ -112,8 +118,8 @@
       "name": "Rogo",
       "location": "New York, NY",
       "position": "Intern — Data & Analytics",
-      "startDate": "Aug. 2022",
-      "endDate": "May 2023",
+      "startDate": "2022-08",
+      "endDate": "2023-05",
       "highlights": ["X"]
     },
 
@@ -121,8 +127,8 @@
       "name": "Steel Key Capital",
       "location": "New York, NY",
       "position": "Intern — Financial Analysis",
-      "startDate": "Jan. 2022",
-      "endDate": "Aug. 2022",
+      "startDate": "2022-01",
+      "endDate": "2022-08",
       "highlights": ["X"]
     }
   ],
@@ -138,7 +144,14 @@
     },
     {
       "name": "Core Skills",
-      "keywords": ["Statistics", "Machine Learning", "Data Science", "Financial Engineering", "Leadership", "Collaboration"]
+      "keywords": [
+        "Statistics",
+        "Machine Learning",
+        "Data Science",
+        "Financial Engineering",
+        "Leadership",
+        "Collaboration"
+      ]
     }
   ]
 }
