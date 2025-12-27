@@ -22,90 +22,29 @@
       "location": "Storrs, Connecticut",
       "area": "Mathematics",
       "studyType": "PhD",
-      "startDate": "August 2024",
+      "startDate": "Aug. 2024",
       "endDate": "Present"
     },
+    
     {
       "institution": "University of Connecticut",
       "location": "Storrs, Connecticut",
       "area": "Mathematics",
       "studyType": "MS",
-      "startDate": "August 2024",
-      "endDate": "December 2025",
+      "startDate": "Aug. 2024",
+      "endDate": "Dec. 2025",
       "score": "3.9"
     },
+    
     {
       "institution": "Fordham University",
       "location": "New York, New York",
       "area": "Applied Mathematics",
       "studyType": "BS",
-      "startDate": "August 2021",
+      "startDate": "Aug. 2021",
       "endDate": "May 2024",
       "score": "3.97",
       "honors": ["summa cum laude"]
-    }
-  ],
-
-  "work": [
-    {
-      "name": "University of Connecticut",
-      "location": "Storrs, CT",
-      "position": "Graduate Assistant",
-      "startDate": "August 2024",
-      "endDate": "Present",
-      "summary": "Graduate research and teaching assistant in mathematics.",
-      "highlights": [
-        "Built and documented Python code for retrieval and runtime experiments.",
-        "Passed qualifying exams in Topology and Abstract Algebra.",
-        "Excelled in graduate coursework in analysis and geometry."
-      ]
-    },
-    {
-      "name": "Rogo",
-      "location": "New York, NY",
-      "position": "Intern — Data & Analytics",
-      "startDate": "August 2022",
-      "endDate": "May 2023",
-      "highlights": [
-        "Supported reporting and exploratory analysis with Python.",
-        "Performed market analysis using statistical methods.",
-        "Prepared investor pitch decks and strategy memoranda for founders."
-      ]
-    },
-    {
-      "name": "Steel Key Capital",
-      "location": "New York, NY",
-      "position": "Intern — Financial Analysis",
-      "startDate": "January 2022",
-      "endDate": "August 2022",
-      "highlights": [
-        "Delegated tasks to six interns.",
-        "Designed delta-neutral cryptocurrency investment strategies.",
-        "Built Python pipelines for live financial data analysis."
-      ]
-    },
-    {
-      "name": "Fordham University",
-      "location": "New York, NY",
-      "position": "Research Assistant",
-      "startDate": "May 2023",
-      "endDate": "August 2023",
-      "highlights": [
-        "Developed Python pipelines for data collection and analysis.",
-        "Planned experiments and wrote over half of an academic paper.",
-        "Proved probabilistic and combinatorial conjectures."
-      ]
-    }
-  ],
-
-  "teaching": [
-    {
-      "institution": "University of Connecticut",
-      "role": "Teaching Assistant",
-      "startDate": "August 2024",
-      "endDate": "Present",
-      "courses": ["Math for Business and Economics (Fall 2024, Summer 2025)", "Calculus II (Spring 2025)", "Calculus I (Fall 2025, Spring 2026)"],
-      "responsibilities": ["Led discussion sections for 90–100 students", "Graded exams and assignments", "Held regular office hours"]
     }
   ],
 
@@ -136,6 +75,65 @@
       "year": "2024",
       "url": "https://arxiv.org/abs/2409.06866"
     }
+  ],
+
+    "teaching": [
+    {
+      "institution": "University of Connecticut",
+      "role": "Teaching Assistant",
+      "startDate": "Aug. 2024",
+      "endDate": "Present",
+      "courses": ["Math for Business and Economics (Fall 2024, Summer 2025)", "Calculus II (Spring 2025)", "Calculus I (Fall 2025, Spring 2026)"],
+      "responsibilities": ["Led discussion sections for 90–100 students", "Graded exams and assignments", "Held regular office hours"]
+    }
+  ],
+
+  "work": [
+    {
+      "name": "University of Connecticut",
+      "location": "Storrs, CT",
+      "position": "Graduate Assistant",
+      "startDate": "Aug. 2024",
+      "endDate": "Present",
+      "summary": "Graduate research and teaching assistant in mathematics.",
+      "highlights": [
+        "X",
+        "X"
+      ]
+    },
+
+    {
+      "name": "Fordham University",
+      "location": "New York, NY",
+      "position": "Research Assistant",
+      "startDate": "May 2023",
+      "endDate": "Aug. 2023",
+      "highlights": [
+        "X"
+      ]
+    }
+    
+    {
+      "name": "Rogo",
+      "location": "New York, NY",
+      "position": "Intern — Data & Analytics",
+      "startDate": "Aug. 2022",
+      "endDate": "May 2023",
+      "highlights": [
+        "X"
+      ]
+    },
+    
+    {
+      "name": "Steel Key Capital",
+      "location": "New York, NY",
+      "position": "Intern — Financial Analysis",
+      "startDate": "Jan. 2022",
+      "endDate": "Aug. 2022",
+      "highlights": [
+        "X"
+      ]
+    },
   ],
 
   "skills": [
