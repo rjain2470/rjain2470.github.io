@@ -11,4 +11,4 @@ nav_order: 3
 
 ### preprints
 
-1. [The number of solutions of a random system of polynomials over a finite field](https://arxiv.org/abs/2409.06866), <br />_preprint_ (2025).
+1. [The number of solutions of a random system of polynomials over a finite field](https://arxiv.org/abs/2409.06866), <br /> preprint (2025).
