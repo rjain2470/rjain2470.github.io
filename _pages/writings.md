@@ -14,7 +14,7 @@ TBA
 
 ### machine learning
 
-- [Supervised Learning](assets/pdf/Supervised_Learning.pdf) – This is an exposition to basic machine learning concepts such as gradient descent, k-nearest neighbors, soft-margin SVM from a mathematical viewpoint, using real-world examples.
+* <a href="/assets/pdf/Supervised_Learning.pdf" target="_blank">Supervised Learning</a> – This is an exposition to basic machine learning concepts such as gradient descent, k-nearest neighbors, soft-margin SVM from a mathematical viewpoint, using real-world examples.
 
 ### physics
 
