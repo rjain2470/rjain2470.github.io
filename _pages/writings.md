@@ -9,7 +9,12 @@ In my spare time, I enjoy writing expository notes on various subjects. This is 
 
 ### mathematics
 
+TBA
+
 ### machine learning
-* [Supervised Learning](assets/Supervised_Learning.pdf) – This is an exposition to basic machine learning concepts such as gradient descent, k-nearest neighbors, soft-margin SVM from a mathematical viewpoint, using real-world examples.
+
+* [Supervised Learning](assets/pdf/Supervised_Learning.pdf) – This is an exposition to basic machine learning concepts such as gradient descent, k-nearest neighbors, soft-margin SVM from a mathematical viewpoint, using real-world examples.
 
 ### physics
+
+TBA
