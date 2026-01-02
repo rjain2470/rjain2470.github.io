@@ -2,7 +2,7 @@
 layout: default
 permalink: /writings/
 title: writings
-nav: true
+nav: false
 nav_order: 6
 ---
 
