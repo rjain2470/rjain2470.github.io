@@ -5,7 +5,7 @@ description: An end-to-end, multi-purpose Lean autoformalization and autoreasoni
 img: assets/img/neumann_photo.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Description: TBA.
