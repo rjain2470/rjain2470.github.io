@@ -6,7 +6,7 @@ nav: false
 collection: books
 ---
 
-Here I have collected a list of textbooks I have found useful and/or interesting. While my reading of these books ranges from "cover-to-cover" to "a chapter or two", all of them contain some valuable insights. If you are interested in reading them yourself, you can find a pdf for most of these books freely online.
+Here I have collected a list of textbooks I have found useful and/or interesting. While my reading of these books ranges from "cover-to-cover" to "a chapter or two", I have gained valuable insights from each of them. You can find a pdf for most of these books freely online.
 
 I am also an avid reader of classic literature. You can find out more about my non-academic readings on my [Goodreads page](https://www.goodreads.com/user/show/197195596-ritik).
 
