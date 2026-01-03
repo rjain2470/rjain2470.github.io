@@ -30,7 +30,7 @@ I am also an avid reader of classic literature. You can find out more about my n
 - Diamond and Sherman, _A First Course in Modular Forms_
 - Koblitz, _p-adic Numbers, p-adic Analysis, and Zeta-Functions_
 - Marcus, _Number Fields_ \*
-- Neukirch, _Algebraic Number Theory_
+- Neukirch, _Algebraic Number Theory_ \*
 - Serre, _A Course in Arithmetic_
 
 ### Topology
