@@ -58,4 +58,5 @@ I am also an avid reader of classic literature. You can find out more about my n
 - Landau, _Mechanics_ \*
 - Lugo, _Differential Geometry in Physics_
 
+
 _Texts marked with an asterisk were especially valuable to my mathematical development, and are exemplary treatments of their respective subjects in my view._
