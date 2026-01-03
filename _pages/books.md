@@ -6,7 +6,7 @@ nav: false
 collection: books
 ---
 
-Here I have collected a list of textbooks I have found useful and/or interesting. Although my reading of these books has ranges from "cover-to-cover" to "a chapter or two" (with the former being truest for the algebra textbooks and the latter for the physics textbooks), I have gleaned some valuable insights from all of them. If you are interested in reading them yourself, you can find a pdf for most of these books freely online. 
+Here I have collected a list of textbooks I have found useful and/or interesting. Although my reading of these books ranges from "cover-to-cover" to "a chapter or two" (with the former being truest for the algebra textbooks and the latter for the physics textbooks), I have gleaned some valuable insights from all of them. If you are interested in reading them yourself, you can find a pdf for most of these books freely online. 
 
 I am also an avid reader of classic literature. You can find out more about my non-academic readings on my [Goodreads page](https://www.goodreads.com/user/show/197195596-ritik).
 
