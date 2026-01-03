@@ -6,47 +6,54 @@ nav: false
 collection: books
 ---
 
-Here I have collected a list of textbooks I have found useful and/or interesting. While my reading of these books ranges from "cover-to-cover" to "a chapter or two" (with the former being truest for the algebra textbooks and the latter for the physics textbooks), I have gleaned some valuable insights from all of them. If you are interested in reading them yourself, you can find a pdf for most of these books freely online. 
+Here I have collected a list of textbooks I have found useful and/or interesting. While my reading of these books ranges from "cover-to-cover" to "a chapter or two" (with the former being truest for the algebra textbooks and the latter for the physics textbooks), I have gleaned some valuable insights from all of them. If you are interested in reading them yourself, you can find a pdf for most of these books freely online.
 
 I am also an avid reader of classic literature. You can find out more about my non-academic readings on my [Goodreads page](https://www.goodreads.com/user/show/197195596-ritik).
 
 ### Undergraduate-level Texts
-- Andrews, *Number Theory*
-- Axler, *Linear Algebra Done Right*
-- Blitzstein and Hwang, *Introduction to Probability Theory*
-- Hammack, *Book of Proof*
-- Hungerford, *Abstract Algebra: An Introduction*
-- Rudin, *Principles of Mathematical Analysis*
+
+- Andrews, _Number Theory_
+- Axler, _Linear Algebra Done Right_
+- Blitzstein and Hwang, _Introduction to Probability Theory_
+- Hammack, _Book of Proof_
+- Hungerford, _Abstract Algebra: An Introduction_
+- Rudin, _Principles of Mathematical Analysis_
 
 ### Algebra
-- Atiyah and Macdonald, *Commutative Algebra*
-- Dummit and Foote, *Abstract Algebra*
-- Lang, *Algebra*
+
+- Atiyah and Macdonald, _Commutative Algebra_
+- Dummit and Foote, _Abstract Algebra_
+- Lang, _Algebra_
 
 ### Number Theory
-- Diamond and Sherman, *A First Course in Modular Forms*
-- Koblitz, *p-adic Numbers, p-adic Analysis, and Zeta-Functions*
-- Marcus, *Number Fields*
-- Neukirch, *Algebraic Number Theory*
-- Serre, *A Course in Arithmetic*
+
+- Diamond and Sherman, _A First Course in Modular Forms_
+- Koblitz, _p-adic Numbers, p-adic Analysis, and Zeta-Functions_
+- Marcus, _Number Fields_
+- Neukirch, _Algebraic Number Theory_
+- Serre, _A Course in Arithmetic_
 
 ### Topology
-- Hatcher, *Algebraic Topology*
-- Milnor, *Topology from the Differentiable Viewpoint*
-- Munkres, *Topology*
+
+- Hatcher, _Algebraic Topology_
+- Milnor, _Topology from the Differentiable Viewpoint_
+- Munkres, _Topology_
 
 ### Analysis
-- Folland, *Real Analysis*
-- Rudin, *Real and Complex Analysis*
-- Stein and Shakarchi, *Complex Analysis*
+
+- Folland, _Real Analysis_
+- Rudin, _Real and Complex Analysis_
+- Stein and Shakarchi, _Complex Analysis_
 
 ### Geometry
-- Lee, *Introduction to Topological Manifolds*
-- Milne, *Algebraic Geometry*
-- Tu, *Differential Geometry*
+
+- Lee, _Introduction to Topological Manifolds_
+- Milne, _Algebraic Geometry_
+- Tu, _Differential Geometry_
 
 ### Physics
-- Arnold, *Mathematical Methods of Classical Mechanics*
-- Hall, *Quantum Theory for Mathematicians*
-- Landau, *Mechanics*
-- Lugo, *Differential Geometry in Physics*
+
+- Arnold, _Mathematical Methods of Classical Mechanics_
+- Hall, _Quantum Theory for Mathematicians_
+- Landau, _Mechanics_
+- Lugo, _Differential Geometry in Physics_
