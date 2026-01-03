@@ -6,13 +6,16 @@ nav: false
 collection: books
 ---
 
-Here I have collected a list of textbooks I have found useful and/or interesting. You can find a pdf of many of these books freely online. I am also an avid reader of classic literature: you can find out more about my non-mathematical readings on [Goodreads](https://www.goodreads.com/user/show/197195596-ritik).
+Here I have collected a list of textbooks I have found useful and/or interesting. Although my reading of these books has ranges from "cover-to-cover" to "a chapter or two" (with the former being truest for the algebra textbooks and the latter for the physics textbooks), I have gleaned some valuable insights from all of them. If you are interested in reading them yourself, you can find a pdf for most of these books freely online. 
+
+I am also an avid reader of classic literature. You can find out more about my non-academic readings on my [Goodreads page](https://www.goodreads.com/user/show/197195596-ritik).
 
 ### Undergraduate-level Texts
 - Andrews, *Number Theory*
 - Axler, *Linear Algebra Done Right*
 - Blitzstein and Hwang, *Introduction to Probability Theory*
 - Hammack, *Book of Proof*
+- Hungerford, *Abstract Algebra: An Introduction*
 - Rudin, *Principles of Mathematical Analysis*
 
 ### Algebra
@@ -46,3 +49,4 @@ Here I have collected a list of textbooks I have found useful and/or interesting
 - Arnold, *Mathematical Methods of Classical Mechanics*
 - Hall, *Quantum Theory for Mathematicians*
 - Landau, *Mechanics*
+- Lugo, *Differential Geometry in Physics*
