@@ -19,19 +19,11 @@ with Repeated Sampling](https://arxiv.org/abs/2407.21787).
 
 As of January 2026, neumann-prover has yet to be tested on a large dataset. However, preliminary evidence suggests that its performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
 
-> If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X).
+"If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X)."
 
 First, the model generated the following rewriting of the statement, making the implicit definitions and assumptions explicit:
 
-> Let X be a compact space and let C(X) denote the algebra of continuous complex-
-> valued functions on X equipped with the uniform (supremum) norm. Suppose A is a
-> subalgebra of C(X) that is closed under complex conjugation, separates the
-> points of X (that is, for any two distinct points of X there is a function in A
-> taking different values at those points), and does not vanish at any point of X
-> (that is, for every x in X there exists a function in A with nonzero value at
-> x). Then A is dense in C(X) with respect to the uniform norm; equivalently,
-> every continuous complex-valued function on X can be uniformly approximated
-> arbitrarily well by functions from A.
+"Let X be a compact space and let C(X) denote the algebra of continuous complex-valued functions on X equipped with the uniform (supremum) norm. Suppose A is a subalgebra of C(X) that is closed under complex conjugation, separates the points of X (that is, for any two distinct points of X there is a function in A taking different values at those points), and does not vanish at any point of X (that is, for every x in X there exists a function in A with nonzero value at x). Then A is dense in C(X) with respect to the uniform norm; equivalently, every continuous complex-valued function on X can be uniformly approximated arbitrarily well by functions from A."
 
 From there, it was able to produce a correct formal statement of the theorem:
 
