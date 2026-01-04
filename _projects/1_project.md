@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-GitHub repo: [https://github.com/rjain2470/neumann-prover](https://github.com/rjain2470/neumann-prover).
+GitHub: [https://github.com/rjain2470/neumann-prover](https://github.com/rjain2470/neumann-prover).
 
 Neumann-prover is a multi-purpose autoformalization tool designed to produce formal proofs in Lean. It uses cutting-edge foundation models from OpenAI, and Anthropic, as well as over twenty open-source models available via Together, including offerings from DeepSeek, Qwen, and Meta. It offers extraordinary flexibility: not only can users choose which model to use, they have the option to input an informal statement and/or a formal statement in Lean, as well as the option to input an informal proof. Moreover, the user can choose whether they want (i) an informal proof, (ii) a formal statement, (iii) Lean pseudocode of a formal proof, or (iv) a formal proof. The model then interacts dynamically with the Lean compiler to iterate until it produces a correct result.
 
