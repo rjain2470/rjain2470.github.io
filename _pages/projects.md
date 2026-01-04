@@ -13,7 +13,7 @@ horizontal: false
 
 ### autoformalization
 
-These are my projects related to autoformalization and autoreasoning in [Lean](https://en.wikipedia.org/wiki/Lean_(proof_assistant)). Autoformalization can be refers to the process of translating mathematical statements and proofs into a formal language such as Lean, whereas autoreasoning denotes the ability of a system produces original formal mathematics with minimal human intervention. That being said, "autoformalization" has become a blanket term for both. Among other motivations, the most ambitious possible outcome of this work would be a system capable of producing novel mathematical proofs, which, having been written in a formal language, would be _a priori_ correct.
+These are my projects related to autoformalization and autoreasoning in [Lean](https://en.wikipedia.org/wiki/Lean_(proof_assistant)). Autoformalization can be refers to the process of translating mathematical statements and proofs into a formal language such as Lean, whereas autoreasoning denotes the ability of a system produces original formal mathematics with minimal human intervention. Among other motivations, the most ambitious possible outcome of this work would be a system capable of producing novel mathematical proofs, which, having been written in a formal language, would be _a priori_ correct.
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
