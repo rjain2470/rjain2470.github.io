@@ -29,9 +29,6 @@ From there, it was able to produce a correct formal statement of the theorem:
 
 <div style="white-space: pre;">
 <pre><code class="language-lean">
-Compiled: True
-------------------------------
-
 import Mathlib
 namespace Demo
 
