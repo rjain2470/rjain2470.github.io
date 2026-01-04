@@ -1,7 +1,7 @@
 ---
 layout: page
 title: neumann-prover
-description: An end-to-end, multi-purpose Lean autoformalization and autoreasoning tool. GitHub: [https://github.com/rjain2470/neumann-prover](https://github.com/rjain2470/neumann-prover).
+description: "An end-to-end, multi-purpose Lean autoformalization and autoreasoning tool. GitHub: https://github.com/rjain2470/neumann-prover."
 img: assets/img/neumann_photo.jpg
 importance: 1
 category: work
