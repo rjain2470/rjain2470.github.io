@@ -27,7 +27,7 @@ First, the model generated the following rewriting of the statement, making the 
 
 After four attempts, it was then able to produce a correct formal statement of the theorem, which is given below.
 
-<pre><code style="white-space: pre;"> import Mathlib
+<pre><code style="white-space: pre;">import Mathlib
 namespace Demo
 
 theorem stone_weierstrass_complex
@@ -43,7 +43,7 @@ theorem stone_weierstrass_complex
 (A_nonvanish : ∀ x, ∃ f ∈ A, f x ≠ 0) :
 ∀ (f : X → ℂ), Continuous f → ∀ (ε : ℝ), ε > 0 → ∃ g ∈ A, ∀ x, ‖f x - g x‖ < ε
 := by
-sorry
+  sorry
 
 end Demo</code></pre>
 
