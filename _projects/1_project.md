@@ -25,7 +25,7 @@ First, the model generated the following rewriting of the statement, making the 
 
 "Let X be a compact space and let C(X) denote the algebra of continuous complex-valued functions on X equipped with the uniform (supremum) norm. Suppose A is a subalgebra of C(X) that is closed under complex conjugation, separates the points of X (that is, for any two distinct points of X there is a function in A taking different values at those points), and does not vanish at any point of X (that is, for every x in X there exists a function in A with nonzero value at x). Then A is dense in C(X) with respect to the uniform norm; equivalently, every continuous complex-valued function on X can be uniformly approximated arbitrarily well by functions from A."
 
-From there, it was able to produce a correct formal statement of the theorem after four attempts:
+After four attempts, it was then able to produce a correct formal statement of the theorem, which is given below.
 
 <pre><code style="white-space: pre;">
 import Mathlib
