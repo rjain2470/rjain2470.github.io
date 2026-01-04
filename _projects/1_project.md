@@ -14,10 +14,10 @@ Neumann-prover is a multi-purpose autoformalization tool designed to produce for
 
 The motivation for neumann-prover stems from my experience using models trained specifically for autoformalization, such as DeepSeek-Prover-V2 and Kimina-Prover, I observed that they tended to be narrow in scope and brittle in practice, often exhibiting hallucinations in response to even minor changes in the prompt. Even worse, they often produce Lean code which compiles correctly, but prove statements which are entirely different than the one the user inputs, indicating a lack of robust semantic and reasoning capabilities.
 
-By contrast, current foundation models exhibit strong performance in code generation and informal mathematical reasoning. Moreover, as recent work has shown, the inaccuracies in such models can effectively be mitigated through repeated attempts with structured error feedback. For instance, see the following amusingly-titled paper: [Large Language Monkeys: Scaling Inference Compute
+By contrast, current foundation models exhibit strong performance in code generation and informal mathematical reasoning. Moreover, as recent work has shown, the inaccuracies in such models can effectively be mitigated through repeated attempts with structured error feedback. For instance, see the amusingly-titled paper [Large Language Monkeys: Scaling Inference Compute
 with Repeated Sampling](https://arxiv.org/abs/2407.21787).
 
-As of January 2026, neumann-prover has not yet been rigorously tested on a large dataset. However, empirical evidence suggests that its performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
+As of January 2026, neumann-prover has yet to be tested on a large dataset. However, preliminary evidence suggests that its performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
 
 > If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X).
 
