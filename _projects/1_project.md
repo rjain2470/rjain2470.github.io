@@ -27,8 +27,8 @@ First, the model generated the following rewriting of the statement, making the 
 
 From there, it was able to produce a correct formal statement of the theorem:
 
-<div style="white-space: pre;">
-<pre><code class="language-lean">
+<pre>
+<code class="language-lean" style="white-space: pre !important;">
 import Mathlib
 namespace Demo
 
@@ -46,7 +46,9 @@ theorem stone_weierstrass_complex
 ∀ (f : X → ℂ), Continuous f → ∀ (ε : ℝ), ε > 0 → ∃ g ∈ A, ∀ x, ‖f x - g x‖ < ε
 := by
 sorry
-</code></pre>
-</div>
+
+end Demo
+</code>
+</pre>
 
 While this project is still in the works, I am optimistic that the general approach of pairing foundation models with compiler-guided feedback can set a new standard for autoformalization, with promising implications for autoreasoning as well.
