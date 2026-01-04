@@ -15,7 +15,7 @@ The motivation for neumann-prover stems from my experience using models trained 
 By contrast, current foundation models exhibit strong performance in code generation and informal mathematical reasoning. Moreover, as recent work has shown, the inaccuracies in such models can effectively be mitigated through repeated attempts with structured error feedback. See for instance, the following amusingly-titled paper: [Large Language Monkeys: Scaling Inference Compute
 with Repeated Sampling](https://arxiv.org/abs/2407.21787).
 
-As of January 2026, neumann-prover has not yet been rigorously tested on a large dataset. However, empirical evidence suggests that its performance is quite strong, particularly in the task of autoformalization. In one example, the model was asked to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
+As of January 2026, neumann-prover has not yet been rigorously tested on a large dataset. However, empirical evidence suggests that its performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
 
 > If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X).
 
