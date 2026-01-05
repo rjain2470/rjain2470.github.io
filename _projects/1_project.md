@@ -11,7 +11,7 @@ related_publications: false
 GitHub: [https://github.com/rjain2470/neumann-prover](https://github.com/rjain2470/neumann-prover).
 
 <p align="center">
-  <img src="assets/img/flowchart.png"
+  <img src="flowchart.png"
        alt="Neumann-Prover diagram"
        width="90%">
 </p>
