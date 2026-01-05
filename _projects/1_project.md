@@ -12,7 +12,7 @@ GitHub: [https://github.com/rjain2470/neumann-prover](https://github.com/rjain24
 
 <p align="center">
   <img src="assets/flowchart.png"
-       alt="Neumann-Prover workflow diagram"
+       alt="Neumann-Prover diagram"
        width="90%">
 </p>
 
