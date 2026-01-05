@@ -7,7 +7,7 @@ importance: 3
 category: work
 ---
 
-GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/lean-kg).
+GitHub: [https://github.com/rjain2470/lean-kg](https://github.com/rjain2470/lean-kg).
 
 <p align="center">
   <a href="/assets/html/lean-kg-demo.html">
