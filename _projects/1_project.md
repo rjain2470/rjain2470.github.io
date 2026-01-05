@@ -27,7 +27,7 @@ The motivation for neumann-prover stems from my experience using models trained 
 By contrast, current foundation models exhibit strong performance in code generation and informal mathematical reasoning. Moreover, as recent work has shown, the inaccuracies in such models can effectively be mitigated through repeated attempts with structured error feedback. For instance, see the amusingly-titled paper [Large Language Monkeys: Scaling Inference Compute
 with Repeated Sampling](https://arxiv.org/abs/2407.21787).
 
-As of January 2026, neumann-prover has yet to be tested on a large dataset. However, preliminary evidence suggests that its performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
+Indeed, preliminary evidence suggests that neumann-prover's performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
 
 "If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X)."
 
@@ -35,7 +35,7 @@ First, the model generated the following rewriting of the statement, making the 
 
 "Let X be a compact space and let C(X) denote the algebra of continuous complex-valued functions on X equipped with the uniform (supremum) norm. Suppose A is a subalgebra of C(X) that is closed under complex conjugation, separates the points of X (that is, for any two distinct points of X there is a function in A taking different values at those points), and does not vanish at any point of X (that is, for every x in X there exists a function in A with nonzero value at x). Then A is dense in C(X) with respect to the uniform norm; equivalently, every continuous complex-valued function on X can be uniformly approximated arbitrarily well by functions from A."
 
-After four attempts, it was then able to produce a correct formal statement of the theorem, which is given below.
+This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
 <pre><code style="white-space: pre;">import Mathlib
 namespace Demo
