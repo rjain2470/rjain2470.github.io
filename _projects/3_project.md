@@ -11,7 +11,7 @@ GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/l
 
 <p align="center">
   <a href="/assets/html/lean-kg-demo.html">
-    <img src="/assets/html/lean-kg-demo.png"
+    <img src="/assets/img/lean-kg-demo.img"
          alt="Demo graph with 20k nodes"
          width="550">
   </a>
