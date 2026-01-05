@@ -1,18 +1,12 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: cv
+title: CV
+description: Last updated January 2026. 
 nav: true
 nav_order: 2
-description: Last updated January 2026.
 ---
 
-<a href="/assets/pdf/JainCV.pdf" target="_blank">Click to download PDF</a>
+<a href="/assets/pdf/JainCV.pdf" target="_blank">Click to Download PDF</a>
 
-<div style="width: 100%; overflow: visible; margin-top: 1rem;">
-  <embed src="/assets/pdf/JainCV.pdf"
-         type="application/pdf"
-         width="780"
-         height="1200"
-         loading="eager">
-</div>
+<embed src="/assets/pdf/JainCV.pdf" type="application/pdf" width="780" height="1200">
