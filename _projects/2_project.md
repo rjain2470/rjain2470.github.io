@@ -40,14 +40,11 @@ The workflow of RAG-prover consists of the following key steps:
 
 Let us demonstate how RAG-prover works with an example. Suppose we input the query
 
-<pre class="plain-code"><code>
-∀ n m : ℕ, n + m = m + n
-</code></pre>
+<pre class="plain-code"><code>∀ n m : ℕ, n + m = m + n</code></pre>
 
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
 
-<pre class="plain-code"><code>
-You are an expert Lean 4 code generator. Your goal is to prove the following statement:
+<pre class="plain-code"><code>You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
 ∀ n m : ℕ, n + m = m + n
 
@@ -59,13 +56,11 @@ You may find the following list of theorems/formal statements helpful:
   • Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
 
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
-The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof."
-</code></pre>
+The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.</code></pre>
 
 After some reasoning, the model produces the following, correct Lean code:
 
-<pre class="plain-code"><code>
-theorem statement : ∀ n m : ℕ, n + m = m + n := by
+<pre class="plain-code"><code>theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
     intro n
     intro m
@@ -77,8 +72,7 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       -- Inductive step: assume the statement holds for m, prove for m + 1
       simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
       <;> omega
-  exact h_main
-</code></pre>
+  exact h_main</code></pre>
 
 ## Limitations
 
