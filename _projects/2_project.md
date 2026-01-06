@@ -66,18 +66,18 @@ After some reasoning, the model produces the following, correct formal proof in 
 {% highlight lean linenos %}
 
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
-have h_main : ∀ n m : ℕ, n + m = m + n := by
-intro n
-intro m
-induction m with
-| zero =>
--- Base case: m = 0
-simp
-| succ m ih =>
--- Inductive step: assume the statement holds for m, prove for m + 1
-simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
-<;> omega
-exact h_main
+  have h_main : ∀ n m : ℕ, n + m = m + n := by
+    intro n
+    intro m
+    induction m with
+    | zero =>
+      -- Base case: m = 0
+      simp
+    | succ m ih =>
+      -- Inductive step: assume the statement holds for m, prove for m + 1
+      simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+      <;> omega
+  exact h_main
 {% endhighlight %}
 
 ## Limitations
