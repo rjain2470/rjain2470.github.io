@@ -19,7 +19,7 @@ GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/r
   <em>Diagram of RAG-prover’s workflow.</em>
 </p>
 
-RAG-prover is Retrieval-Augmented Generation (RAG) based autoreasoning model, designed to automatically generate formal proofs in Lean. Built atop [DeepSeek-Prover-V2 7B](https://arxiv.org/abs/2504.21801), a lightweight LLM designed for autoformalization, RAG-prover implements semantic retrieval to bolster the performance of the underlying model.
+RAG-prover is Retrieval-Augmented Generation (RAG)-based autoreasoning model, designed to automatically generate formal proofs in Lean. Built atop [DeepSeek-Prover-V2 7B](https://arxiv.org/abs/2504.21801), a lightweight LLM designed for autoformalization, RAG-prover implements semantic retrieval to bolster the performance of the underlying model.
 
 ## Workflow
 The workflow of RAG-prover consists of the following key steps:
@@ -28,17 +28,20 @@ The workflow of RAG-prover consists of the following key steps:
 
 * The user begins the workflow by inputting a query (a formal or informal mathematical statement), and a parameter $k$. 
 
-* Finally, using `text-embedding-3-large`, RAG-prover semantically embeds this query, retrieves its approximate $k$-nearest neighbors, and prompts DeepSeek-Prover to provide a formal proof, given the query and its nearest neighbors. Then, it returns the output.
+* Then, using `text-embedding-3-large`, RAG-prover semantically embeds this query, retrieves its approximate $k$-nearest neighbors, and prompts DeepSeek-Prover to provide a formal proof conditioned on the query and the retrieved context. Then, it returns the output.
 
 ## Key Features
 1. _RAG Architecture:_ By using Retrieval-Augmented Generation and providing the names of real, relevant mathlib files, we effectively mitigate the tendency of LLMs to hallucinate file names, therefore improving accuracy.
 2. _Scalability and Low Computational Cost:_ RAG-prover utilizes recent advances in efficient vector search such as FAISS to improve the capabilities of the underlying LLM with only a small addition to computational cost.
 
 ## Example
-Let us demonstate how RAG-prover works with an example. Suppose we input the following query:
+Let us demonstate how RAG-prover works with an example. Suppose we input the query
+```text
 ∀ n m : ℕ, n + m = m + n
-where $k=5$ and $N=1$. Then, after semantically embedding our query, the model generates the following prompt for DeepSeek-Prover-V2:
-"You are an expert Lean 4 code generator. Your goal is to prove the following statement:
+```
+with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
+```text
+You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
 ∀ n m : ℕ, n + m = m + n
 
@@ -51,8 +54,8 @@ You may find the following list of theorems/formal statements helpful:
 
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof."
-
-After some reasoning, the model then produces the following, correct Lean code.
+```
+After some reasoning, the model produces the following, correct Lean code:
 ```lean4
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
@@ -69,4 +72,4 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
   exact h_main
 ```
 ## Limitations
-While RAG-prover provides a concrete enhancement of DeepSeek-Prover-V2 alone, it has several limitations. For one, it does not include compiler feedback, meaning that the user does not know without checking whether or not the output actually compiles. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query are often not needed for its formal proof. Finally, Deepseek-Prover-V2 continues to suffer from hallucination, wherebyt he model provides a formal proof of a statement which is entirely different from the query.
+While RAG-prover provides a concrete enhancement of DeepSeek-Prover-V2 alone, it has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
