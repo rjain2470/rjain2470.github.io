@@ -37,17 +37,18 @@ First, the model generated the following rewriting of the statement, making the 
 
 This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
-{% highlight linenos %}
+{::nomarkdown}
+{% highlight lean linenos %}
 
 import Mathlib
 namespace Demo
 
-theorem stone*weierstrass_complex
+theorem stone_weierstrass_complex
 {X : Type *} [TopologicalSpace X] [CompactSpace X]
 (A : Set (X → ℂ))
-(A*cont : ∀ f ∈ A, Continuous f)
+(A_cont : ∀ f ∈ A, Continuous f)
 (A_add : ∀ f g, f ∈ A → g ∈ A → f + g ∈ A)
-(A_mul : ∀ f g, f ∈ A → g ∈ A → f \* g ∈ A)
+(A_mul : ∀ f g, f ∈ A → g ∈ A → f * g ∈ A)
 (A_smul : ∀ (c : ℂ) f, f ∈ A → (c • f) ∈ A)
 (A_const : ∀ c : ℂ, (fun * => c) ∈ A)
 (A_conj : ∀ f, f ∈ A → (star f) ∈ A)
@@ -60,5 +61,6 @@ sorry
 end Demo
 
 {% endhighlight %}
+{:/}
 
 While this project is still in the works, I am optimistic that the general approach of pairing foundation models with compiler-guided feedback can set a new standard for autoformalization, with promising implications for autoreasoning as well.
