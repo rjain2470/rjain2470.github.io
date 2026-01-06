@@ -37,43 +37,7 @@ First, the model generated the following rewriting of the statement, making the 
 
 This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
-<style>
-/* --- Lean: only keywords highlighted (al-folio green) --- */
-
-/* Force everything to plain text */
-.highlight.language-lean code span {
-  color: inherit !important;
-  background: none !important;
-  border: none !important;
-}
-
-/* Preserve ONLY keyword coloring (al-folio default green) */
-.highlight.language-lean .k,
-.highlight.language-lean .kd,
-.highlight.language-lean .kn,
-.highlight.language-lean .kc {
-  color: var(--global-theme-color) !important;
-  font-weight: 600;
-}
-
-/* Make all other token classes plain */
-.highlight.language-lean .o,
-.highlight.language-lean .p,
-.highlight.language-lean .mi,
-.highlight.language-lean .mf,
-.highlight.language-lean .err,
-.highlight.language-lean .nb,
-.highlight.language-lean .kt {
-  color: inherit !important;
-}
-
-/* Optional: clean background */
-.highlight.language-lean {
-  background: #fff !important;
-}
-</style>
-
-{% highlight lean linenos %}
+{% highlight linenos %}
 
 import Mathlib
 namespace Demo
