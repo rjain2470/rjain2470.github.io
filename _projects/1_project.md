@@ -37,7 +37,9 @@ First, the model generated the following rewriting of the statement, making the 
 
 This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
-<pre><code style="white-space: pre;">import Mathlib
+{% highlight lean linenos %}
+
+import Mathlib
 namespace Demo
 
 theorem stone_weierstrass_complex
@@ -55,6 +57,8 @@ theorem stone_weierstrass_complex
 := by
   sorry
 
-end Demo</code></pre>
+end Demo
+
+{% endhighlight %}
 
 While this project is still in the works, I am optimistic that the general approach of pairing foundation models with compiler-guided feedback can set a new standard for autoformalization, with promising implications for autoreasoning as well.
