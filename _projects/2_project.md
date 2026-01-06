@@ -46,7 +46,6 @@ Let us demonstate how RAG-prover works with an example. Suppose we input the que
 
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
 ````markdown
-```text
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
 ∀ n m : ℕ, n + m = m + n
@@ -60,11 +59,11 @@ You may find the following list of theorems/formal statements helpful:
 
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
-```
+````
 
 After some reasoning, the model produces the following, correct Lean code:
 
-```lean
+````markdown
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
     intro n
@@ -78,7 +77,6 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
       <;> omega
   exact h_main
-```
 ````
 
 ## Limitations
