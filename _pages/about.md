@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! My name is Ritik, and I am a second-year PhD student in mathematics at the [University of Connecticut](https://uconn.edu/). I earned my Master's degree in December 2025 en route to my PhD. Before UConn, I studied applied mathematics at [Fordham University](https://www.fordham.edu/), graduating _summa cum laude_ in Spring 2024. 
+Hello! My name is Ritik, and I am a second-year PhD student in mathematics at the [University of Connecticut](https://uconn.edu/). I earned my Master's degree in December 2025 en route to my PhD. Before UConn, I studied applied mathematics at [Fordham University](https://www.fordham.edu/), graduating _summa cum laude_ in Spring 2024.
 
 While at Fordham, I participated in an REU project in Summer 2023 under the supervision of Han-Bom Moon, studying rational points on random affine hypersurfaces over finite fields. Using combinatorial methods, I later extended these results to more general affine varieties. In 2022, I also interned at [Rogo](https://rogo.ai/), a finance/AI startup, where I supported early growth and training of internal models.
 
