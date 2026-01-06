@@ -18,4 +18,3 @@ GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/r
 <p align="center">
   <em>Diagram of RAG-prover’s workflow.</em>
 </p>
-
