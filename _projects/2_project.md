@@ -41,12 +41,15 @@ The workflow of RAG-prover consists of the following key steps:
 Let us demonstate how RAG-prover works with an example. Suppose we input the query
 
 {% raw %}
+
 ```lean
 ∀ n m : ℕ, n + m = m + n
 ```
+
 {% endraw %}
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
 {% raw %}
+
 ```
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
@@ -62,11 +65,13 @@ You may find the following list of theorems/formal statements helpful:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 ```
+
 {% endraw %}
 
 After some reasoning, the model produces the following, correct Lean code:
 
 {% raw %}
+
 ```lean
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
@@ -82,6 +87,7 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       <;> omega
   exact h_main
 ```
+
 {% endraw %}
 
 ## Limitations
