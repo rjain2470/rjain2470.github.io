@@ -2,18 +2,20 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title:  Ritik Jain — Mathematics, Machine Learning, Formal Proofs.
 first_name: Ritik
 middle_name:
 last_name: Jain
 contact_note: #> You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Ritik Jain's personal webpage.
+description: > 
+Ritik Jain is a Ph.D. student in mathematics at the University of Connecticut, with interests in number theory, machine learning, and formal mathematics.
+
 #footer_text: >
 #  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: ritik, ritik-jain, ritik-jain-math
+keywords: Ritik Jain, mathematics, PhD student, number theory, machine learning,
+formal mathematics, Lean theorem prover, University of Connecticut
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: "🌎" # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
