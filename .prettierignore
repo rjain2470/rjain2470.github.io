@@ -16,4 +16,5 @@ _posts/2015-07-15-code.md
 assets/js/distillpub/
 CUSTOMIZE.md
 INSTALL.md
-**/*.lean
+1_project.md
+2_project.md
