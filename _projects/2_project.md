@@ -50,7 +50,7 @@ Let us demonstate how RAG-prover works with an example. Suppose we input the que
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
 {% raw %}
 
-```
+```text
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
 ∀ n m : ℕ, n + m = m + n
