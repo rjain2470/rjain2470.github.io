@@ -40,7 +40,7 @@ The workflow of RAG-prover consists of the following key steps:
 
 Let us demonstate how RAG-prover works with an example. Suppose we input the query
 
-{% highlight lean linenos %}
+{% highlight lean %}
 ∀ n m : ℕ, n + m = m + n
 {% endhighlight %}
 
