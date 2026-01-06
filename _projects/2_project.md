@@ -82,22 +82,23 @@ After some reasoning, the model produces the following, correct Lean code:
 While RAG-prover provides an enhancement of DeepSeek-Prover-V2, it also has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
 
 ## Test
+
 Test code 1.
 {% highlight lean linenos %}
 
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
-  have h_main : ∀ n m : ℕ, n + m = m + n := by
-    intro n
-    intro m
-    induction m with
-    | zero =>
-      -- Base case: m = 0
-      simp
-    | succ m ih =>
-      -- Inductive step: assume the statement holds for m, prove for m + 1
-      simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
-      <;> omega
-  exact h_main
+have h_main : ∀ n m : ℕ, n + m = m + n := by
+intro n
+intro m
+induction m with
+| zero =>
+-- Base case: m = 0
+simp
+| succ m ih =>
+-- Inductive step: assume the statement holds for m, prove for m + 1
+simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+<;> omega
+exact h_main
 {% endhighlight %}
 
 Test 2.
@@ -115,8 +116,8 @@ You may find the following list of theorems/formal statements helpful:
 • Algebra.Group.Int.Even.even_sub : Even (m - n) ↔ (Even m ↔ Even n)
 • Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
 
-Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan 
-outlining the main proof steps and strategies. The plan should highlight key ideas, intermediate 
+Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan
+outlining the main proof steps and strategies. The plan should highlight key ideas, intermediate
 lemmas, and proof structures that will guide the construction of the final formal proof.
 
 {% endhighlight %}
