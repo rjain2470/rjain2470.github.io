@@ -45,6 +45,7 @@ Let us demonstate how RAG-prover works with an example. Suppose we input the que
 ```
 
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
+
 ````markdown
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
@@ -60,6 +61,7 @@ You may find the following list of theorems/formal statements helpful:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 ````
+
 ````markdown
 After some reasoning, the model produces the following, correct Lean code:
 
