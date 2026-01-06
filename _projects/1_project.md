@@ -37,25 +37,25 @@ First, the model generated the following rewriting of the statement, making the 
 
 This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
-{% highlight lean linenos %}
+{% highlight text %}
 
 import Mathlib
 namespace Demo
 
-theorem stone*weierstrass_complex
-{X : Type *} [TopologicalSpace X] [CompactSpace X]
-(A : Set (X → ℂ))
-(A*cont : ∀ f ∈ A, Continuous f)
-(A_add : ∀ f g, f ∈ A → g ∈ A → f + g ∈ A)
-(A_mul : ∀ f g, f ∈ A → g ∈ A → f \* g ∈ A)
-(A_smul : ∀ (c : ℂ) f, f ∈ A → (c • f) ∈ A)
-(A_const : ∀ c : ℂ, (fun * => c) ∈ A)
-(A_conj : ∀ f, f ∈ A → (star f) ∈ A)
-(A_sep : ∀ x y, x ≠ y → ∃ f ∈ A, f x ≠ f y)
-(A_nonvanish : ∀ x, ∃ f ∈ A, f x ≠ 0) :
-∀ (f : X → ℂ), Continuous f → ∀ (ε : ℝ), ε > 0 → ∃ g ∈ A, ∀ x, ‖f x - g x‖ < ε
+theorem stone_weierstrass_complex
+  {X : Type *} [TopologicalSpace X] [CompactSpace X]
+  (A : Set (X → ℂ))
+  (A_cont : ∀ f ∈ A, Continuous f)
+  (A_add : ∀ f g, f ∈ A → g ∈ A → f + g ∈ A)
+  (A_mul : ∀ f g, f ∈ A → g ∈ A → f \* g ∈ A)
+  (A_smul : ∀ (c : ℂ) f, f ∈ A → (c • f) ∈ A)
+  (A_const : ∀ c : ℂ, (fun * => c) ∈ A)
+  (A_conj : ∀ f, f ∈ A → (star f) ∈ A)
+  (A_sep : ∀ x y, x ≠ y → ∃ f ∈ A, f x ≠ f y)
+  (A_nonvanish : ∀ x, ∃ f ∈ A, f x ≠ 0) :
+  ∀ (f : X → ℂ), Continuous f → ∀ (ε : ℝ), ε > 0 → ∃ g ∈ A, ∀ x, ‖f x - g x‖ < ε
 := by
-sorry
+  sorry
 
 end Demo
 
