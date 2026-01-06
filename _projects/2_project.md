@@ -46,8 +46,7 @@ Let us demonstate how RAG-prover works with an example. Suppose we input the que
 
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
 
-```markdown
-You are an expert Lean 4 code generator. Your goal is to prove the following statement:
+<pre><code style="white-space: pre;">You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
 ∀ n m : ℕ, n + m = m + n
 
@@ -59,13 +58,11 @@ You may find the following list of theorems/formal statements helpful:
 • Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
 
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
-The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
-```
+The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.</code></pre>
 
 After some reasoning, the model produces the following, correct Lean code:
 
-```lean
-theorem statement : ∀ n m : ℕ, n + m = m + n := by
+<pre><code style="white-space: pre;">theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
     intro n
     intro m
@@ -77,8 +74,7 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       -- Inductive step: assume the statement holds for m, prove for m + 1
       simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
       <;> omega
-  exact h_main
-```
+  exact h_main</code></pre>
 
 ## Limitations
 
