@@ -9,4 +9,13 @@ category: work
 
 GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/rag-prover).
 
-TBA
+<p align="center">
+  <img src="/assets/img/rag_flowchart.jpg"
+       alt="RAG-prover diagram"
+       width="90%">
+</p>
+
+<p align="center">
+  <em>Diagram of RAG-prover’s workflow.</em>
+</p>
+
