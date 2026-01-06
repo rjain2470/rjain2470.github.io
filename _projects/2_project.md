@@ -57,8 +57,9 @@ You may find the following list of theorems/formal statements helpful:
 • Algebra.Group.Int.Even.even_sub : Even (m - n) ↔ (Even m ↔ Even n)
 • Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
 
-Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
-The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.</code></pre>
+Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan 
+outlining the main proof steps and strategies. The plan should highlight key ideas, intermediate 
+lemmas, and proof structures that will guide the construction of the final formal proof.</code></pre>
 
 After some reasoning, the model produces the following, correct Lean code:
 
