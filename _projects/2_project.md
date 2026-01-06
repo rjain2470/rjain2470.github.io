@@ -60,10 +60,10 @@ You may find the following list of theorems/formal statements helpful:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 ````
-
+````markdown
 After some reasoning, the model produces the following, correct Lean code:
 
-````markdown
+```lean
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
     intro n
@@ -77,6 +77,7 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
       <;> omega
   exact h_main
+```
 ````
 
 ## Limitations
