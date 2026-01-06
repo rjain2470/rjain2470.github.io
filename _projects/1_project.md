@@ -44,7 +44,7 @@ This is highly nontrivial statement to formalize in Lean! Even still, after four
 import Mathlib
 namespace Demo
 
-theorem stone*weierstrass_complex
+theorem stone_weierstrass_complex
 {X : Type*} [TopologicalSpace X] [CompactSpace X]
 (A : Set (X → Complex))
 (A_cont : ∀ f in A, Continuous f)
