@@ -61,7 +61,7 @@ Before producing the Lean 4 code to formally prove the given theorem, provide a 
 outlining the main proof steps and strategies. The plan should highlight key ideas, intermediate 
 lemmas, and proof structures that will guide the construction of the final formal proof.</code></pre>
 
-After some reasoning, the model produces the following, correct Lean code:
+After some reasoning, the model produces the following, correct formal proof in Lean:
 
 {% highlight lean linenos %}
 
