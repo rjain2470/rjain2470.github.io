@@ -40,15 +40,11 @@ The workflow of RAG-prover consists of the following key steps:
 
 Let us demonstate how RAG-prover works with an example. Suppose we input the query
 
-{% raw %}
-
 ```lean
 ∀ n m : ℕ, n + m = m + n
 ```
 
-{% endraw %}
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
-{% raw %}
 
 ```text
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
@@ -66,11 +62,7 @@ Before producing the Lean 4 code to formally prove the given theorem, provide a 
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 ```
 
-{% endraw %}
-
 After some reasoning, the model produces the following, correct Lean code:
-
-{% raw %}
 
 ```lean
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
@@ -88,13 +80,9 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
   exact h_main
 ```
 
-{% endraw %}
-
 ## Limitations
 
 While RAG-prover provides an enhancement of DeepSeek-Prover-V2, it also has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
-
-{% raw %}
 
 ```html
 <div class="row justify-content-sm-center">
@@ -106,5 +94,3 @@ While RAG-prover provides an enhancement of DeepSeek-Prover-V2, it also has seve
   </div>
 </div>
 ```
-
-{% endraw %}
