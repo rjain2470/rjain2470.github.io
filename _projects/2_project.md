@@ -18,3 +18,55 @@ GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/r
 <p align="center">
   <em>Diagram of RAG-prover’s workflow.</em>
 </p>
+
+RAG-prover is Retrieval-Augmented Generation (RAG) based autoreasoning model, designed to automatically generate formal proofs in Lean. Built atop [DeepSeek-Prover-V2 7B](https://arxiv.org/abs/2504.21801), a lightweight LLM designed for autoformalization, RAG-prover implements semantic retrieval to bolster the performance of the underlying model.
+
+## Workflow
+The workflow of RAG-prover consists of the following key steps:
+
+* To start, RAG-prover preprocesses [mathlib4](https://github.com/leanprover-community/mathlib4), a massive collection of over 100k formal theorems and proofs, into a collection of vectors in high-dimensional Euclidean space. In particular, it uses OpenAI's [`text-embedding-3-large`](https://platform.openai.com/docs/models/text-embedding-3-large) to embed the library into $\mathbb{R}^n$, grouping semantically similar files together. Then, the resulting embeddings are indexed using [FAISS](https://en.wikipedia.org/wiki/FAISS), allowing for efficient approximate-nearest-neighbors (ANN) search. Due to the computational complexity of these tasks, this embedding is precomputed, and can be loaded by the user.
+
+* The user begins the workflow by inputting a query (a formal or informal mathematical statement), and a parameter $k$. 
+
+* Finally, using `text-embedding-3-large`, RAG-prover semantically embeds this query, retrieves its approximate $k$-nearest neighbors, and prompts DeepSeek-Prover to provide a formal proof, given the query and its nearest neighbors. Then, it returns the output.
+
+## Key Features
+1. _RAG Architecture:_ By using Retrieval-Augmented Generation and providing the names of real, relevant mathlib files, we effectively mitigate the tendency of LLMs to hallucinate file names, therefore improving accuracy.
+2. _Scalability and Low Computational Cost:_ RAG-prover utilizes recent advances in efficient vector search such as FAISS to improve the capabilities of the underlying LLM with only a small addition to computational cost.
+
+## Example
+Let us demonstate how RAG-prover works with an example. Suppose we input the following query:
+∀ n m : ℕ, n + m = m + n
+where $k=5$ and $N=1$. Then, after semantically embedding our query, the model generates the following prompt for DeepSeek-Prover-V2:
+"You are an expert Lean 4 code generator. Your goal is to prove the following statement:
+STATEMENT:
+∀ n m : ℕ, n + m = m + n
+
+You may find the following list of theorems/formal statements helpful:
+  • Logic.Equiv.Fin.Basic.finAddFlip : Fin (m + n) ≃ Fin (n + m)
+  • Data.Nat.Init.dvd_right_iff_eq : (∀ a : ℕ, m ∣ a ↔ n ∣ a) ↔ m = n
+  • Data.Nat.Init.dvd_left_iff_eq : (∀ a : ℕ, a ∣ m ↔ a ∣ n) ↔ m = n
+  • Algebra.Group.Int.Even.even_sub : Even (m - n) ↔ (Even m ↔ Even n)
+  • Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
+
+Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
+The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof."
+
+After some reasoning, the model then produces the following, correct Lean code.
+```lean4
+theorem statement : ∀ n m : ℕ, n + m = m + n := by
+  have h_main : ∀ n m : ℕ, n + m = m + n := by
+    intro n
+    intro m
+    induction m with
+    | zero =>
+      -- Base case: m = 0
+      simp
+    | succ m ih =>
+      -- Inductive step: assume the statement holds for m, prove for m + 1
+      simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+      <;> omega
+  exact h_main
+```
+## Limitations
+While RAG-prover provides a concrete enhancement of DeepSeek-Prover-V2 alone, it has several limitations. For one, it does not include compiler feedback, meaning that the user does not know without checking whether or not the output actually compiles. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query are often not needed for its formal proof. Finally, Deepseek-Prover-V2 continues to suffer from hallucination, wherebyt he model provides a formal proof of a statement which is entirely different from the query.
