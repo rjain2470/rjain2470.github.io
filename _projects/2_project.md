@@ -22,24 +22,30 @@ GitHub: [https://github.com/rjain2470/rag-prover](https://github.com/rjain2470/r
 RAG-prover is Retrieval-Augmented Generation (RAG)-based autoreasoning model, designed to automatically generate formal proofs in Lean. Built atop [DeepSeek-Prover-V2 7B](https://arxiv.org/abs/2504.21801), a lightweight LLM designed for autoformalization, RAG-prover implements semantic retrieval to bolster the performance of the underlying model.
 
 ## Workflow
+
 The workflow of RAG-prover consists of the following key steps:
 
-* To start, RAG-prover preprocesses [mathlib4](https://github.com/leanprover-community/mathlib4), a massive collection of over 100k formal theorems and proofs, into a collection of vectors in high-dimensional Euclidean space. In particular, it uses OpenAI's [`text-embedding-3-large`](https://platform.openai.com/docs/models/text-embedding-3-large) to embed the library into $\mathbb{R}^n$, grouping semantically similar files together. Then, the resulting embeddings are indexed using [FAISS](https://en.wikipedia.org/wiki/FAISS), allowing for efficient approximate-nearest-neighbors (ANN) search. Due to the computational complexity of these tasks, this embedding is precomputed, and can be loaded by the user.
+- To start, RAG-prover preprocesses [mathlib4](https://github.com/leanprover-community/mathlib4), a massive collection of over 100k formal theorems and proofs, into a collection of vectors in high-dimensional Euclidean space. In particular, it uses OpenAI's [`text-embedding-3-large`](https://platform.openai.com/docs/models/text-embedding-3-large) to embed the library into $\mathbb{R}^n$, grouping semantically similar files together. Then, the resulting embeddings are indexed using [FAISS](https://en.wikipedia.org/wiki/FAISS), allowing for efficient approximate-nearest-neighbors (ANN) search. Due to the computational complexity of these tasks, this embedding is precomputed, and can be loaded by the user.
 
-* The user begins the workflow by inputting a query (a formal or informal mathematical statement), and a parameter $k$. 
+- The user begins the workflow by inputting a query (a formal or informal mathematical statement), and a parameter $k$.
 
-* Then, using `text-embedding-3-large`, RAG-prover semantically embeds this query, retrieves its approximate $k$-nearest neighbors, and prompts DeepSeek-Prover to provide a formal proof conditioned on the query and the retrieved context. Then, it returns the output.
+- Then, using `text-embedding-3-large`, RAG-prover semantically embeds this query, retrieves its approximate $k$-nearest neighbors, and prompts DeepSeek-Prover to provide a formal proof conditioned on the query and the retrieved context. Then, it returns the output.
 
 ## Key Features
+
 1. _RAG Architecture:_ By using Retrieval-Augmented Generation and providing the names of real, relevant mathlib files, we effectively mitigate the tendency of LLMs to hallucinate file names, therefore improving accuracy.
 2. _Scalability and Low Computational Cost:_ RAG-prover utilizes recent advances in efficient vector search such as FAISS to improve the capabilities of the underlying LLM with only a small addition to computational cost.
 
 ## Example
+
 Let us demonstate how RAG-prover works with an example. Suppose we input the query
+
 ```text
 ∀ n m : ℕ, n + m = m + n
 ```
+
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
+
 ```text
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
@@ -55,7 +61,9 @@ You may find the following list of theorems/formal statements helpful:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof."
 ```
+
 After some reasoning, the model produces the following, correct Lean code:
+
 ```lean4
 theorem statement : ∀ n m : ℕ, n + m = m + n := by
   have h_main : ∀ n m : ℕ, n + m = m + n := by
@@ -71,5 +79,7 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       <;> omega
   exact h_main
 ```
+
 ## Limitations
+
 While RAG-prover provides a concrete enhancement of DeepSeek-Prover-V2 alone, it has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
