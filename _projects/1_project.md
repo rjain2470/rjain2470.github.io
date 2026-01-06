@@ -48,7 +48,7 @@ theorem stone_weierstrass_complex
   (A_add : ∀ f g, f in A → g in A → f + g in A)
   (A_mul : ∀ f g, f in A → g in A → f * g in A)
   (A_smul : ∀ (c : Complex) f, f in A → (c * f) in A)
-  (A*const : ∀ c : Complex, (fun \* => c) in A)
+  (A*const : ∀ c : Complex, (fun * => c) in A)
   (A_conj : ∀ f, f in A → (star f) in A)
   (A_sep : ∀ x y, x ≠ y → ∃ f in A, f x ≠ f y)
   (A_nonvanish : ∀ x, ∃ f in A, f x ≠ 0) :
