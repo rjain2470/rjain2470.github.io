@@ -27,15 +27,15 @@ The motivation for neumann-prover stems from my experience using models trained 
 By contrast, current foundation models exhibit strong performance in code generation and informal mathematical reasoning. Moreover, as recent work has shown, the inaccuracies in such models can effectively be mitigated through repeated attempts with structured error feedback. For instance, see the amusingly-titled paper [Large Language Monkeys: Scaling Inference Compute
 with Repeated Sampling](https://arxiv.org/abs/2407.21787).
 
-Indeed, preliminary evidence suggests that neumann-prover's performance is quite strong, particularly in the task of autoformalization. For example, I asked the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
+Indeed, preliminary evidence suggests that neumann-prover's performance is quite strong, particularly in the task of autoformalization. For example, suppose we prompt the model to formalize the statement of the Stone-Weierstrass Theorem, which is as follows:
 
 "If A is a self-adjoint algebra of bounded complex functions over a compact set X that separates points and vanishes at no point of X, then A is dense in C(X)."
 
-First, the model generated the following rewriting of the statement, making the implicit definitions and assumptions explicit:
+First, the model generates the following rewriting of the statement, making the implicit definitions and assumptions explicit:
 
 "Let X be a compact space and let C(X) denote the algebra of continuous complex-valued functions on X equipped with the uniform (supremum) norm. Suppose A is a subalgebra of C(X) that is closed under complex conjugation, separates the points of X (that is, for any two distinct points of X there is a function in A taking different values at those points), and does not vanish at any point of X (that is, for every x in X there exists a function in A with nonzero value at x). Then A is dense in C(X) with respect to the uniform norm; equivalently, every continuous complex-valued function on X can be uniformly approximated arbitrarily well by functions from A."
 
-This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
+This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover produces the correct formalization of the theorem, which is given below.
 
 {% highlight lean linenos %}
 import Mathlib
@@ -60,4 +60,8 @@ end Demo
 
 {% endhighlight %}
 
-While this project is still in the works, I am optimistic that the general approach of pairing foundation models with compiler-guided feedback can set a new standard for autoformalization, with promising implications for autoreasoning as well.
+While neumann-prover is still in the works, I am optimistic that the general approach of pairing foundation models with compiler-guided feedback can set a new standard for autoformalization, with promising implications for autoreasoning as well.
+
+## Limitations
+
+The functionality of neumann-prover depends on the use of foundation models via API keys, which may become harder to obtain or more expensive to use. Moreover, foundation models may struggle to disentangle complex logical steps, failing even after multiple attempts. Additionally, neumann-prover requires a properly configured Lean and Mathlib enviroment, which can lead to setup issues as both libraries are actively evolving and subject to breaking changes. Finally, compute limitations can impact performance when handling large input batches, as the workflow involves multiple API calls and Lean code compilation processes running in parallel.
