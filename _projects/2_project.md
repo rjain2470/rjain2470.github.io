@@ -98,31 +98,30 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
       <;> omega
   exact h_main
-  
-}
 {% endhighlight %}
 
 Test 2.
 
-{% highlight c++ linenos %}
+{% highlight text linenos %}
 
-int main(int argc, char const \*argv[])
-{
-string myString;
+You are an expert Lean 4 code generator. Your goal is to prove the following statement:
+STATEMENT:
+∀ n m : ℕ, n + m = m + n
 
-    cout << "input a string: ";
-    getline(cin, myString);
-    int length = myString.length();
+You may find the following list of theorems/formal statements helpful:
+• Logic.Equiv.Fin.Basic.finAddFlip : Fin (m + n) ≃ Fin (n + m)
+• Data.Nat.Init.dvd_right_iff_eq : (∀ a : ℕ, m ∣ a ↔ n ∣ a) ↔ m = n
+• Data.Nat.Init.dvd_left_iff_eq : (∀ a : ℕ, a ∣ m ↔ a ∣ n) ↔ m = n
+• Algebra.Group.Int.Even.even_sub : Even (m - n) ↔ (Even m ↔ Even n)
+• Data.ENat.Basic.forall_natCast_le_iff_le : (∀ a : ℕ, a ≤ m → a ≤ n) ↔ m ≤ n
 
-    char charArray = new char * [length];
+Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan 
+outlining the main proof steps and strategies. The plan should highlight key ideas, intermediate 
+lemmas, and proof structures that will guide the construction of the final formal proof.
 
-    charArray = myString;
-    for(int i = 0; i < length; ++i){
-        cout << charArray[i] << " ";
-    }
+{% endhighlight %}
 
-    return 0;
-    
-}
-
+Test 3.
+{% highlight lean linenos %}
+∀ n m : ℕ, n + m = m + n
 {% endhighlight %}
