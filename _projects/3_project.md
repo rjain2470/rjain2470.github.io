@@ -20,4 +20,3 @@ GitHub: [https://github.com/rjain2470/lean-kg](https://github.com/rjain2470/lean
 <p align="center">
   <em>Interactive sample dependency graph of <code>mathlib4</code> (20k nodes). Click on the image to explore!</em>
 </p>
-
