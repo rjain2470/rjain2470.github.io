@@ -45,7 +45,7 @@ Let us demonstate how RAG-prover works with an example. Suppose we input the que
 ```
 
 with $k=5$. After semantically embedding our query, RAG-prover constructs the following prompt for DeepSeek-Prover-V2:
-
+````markdown
 ```text
 You are an expert Lean 4 code generator. Your goal is to prove the following statement:
 STATEMENT:
@@ -79,18 +79,8 @@ theorem statement : ∀ n m : ℕ, n + m = m + n := by
       <;> omega
   exact h_main
 ```
+````
 
 ## Limitations
 
 While RAG-prover provides an enhancement of DeepSeek-Prover-V2, it also has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
