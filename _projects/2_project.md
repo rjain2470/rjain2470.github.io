@@ -81,68 +81,27 @@ After some reasoning, the model produces the following, correct Lean code:
 While RAG-prover provides an enhancement of DeepSeek-Prover-V2, it also has several limitations. For one, it does not currently include compiler feedback, meaning that correct output is not guaranteed without further verification. Moreover, since semantic similarity is a somewhat rough measure of mathematical relevance, the $k$-nearest neighbors of a given query can be unneccessary or miss key lemmas. Finally, Deepseek-Prover-V2 can still be prone to hallucination, for example by providing a formal proof which is entirely different from the inputted query.
 
 ## Test
-All you have to do is wrap your code in markdown code tags:
+Test code 1.
+{% highlight lean linenos %}
 
-````markdown
-```c++
-code code code
-```
-````
-
-```c++
-int main(int argc, char const \*argv[])
-{
-    string myString;
-
-    cout << "input a string: ";
-    getline(cin, myString);
-    int length = myString.length();
-
-    char charArray = new char * [length];
-
-    charArray = myString;
-    for(int i = 0; i < length; ++i){
-        cout << charArray[i] << " ";
-    }
-
-    return 0;
+theorem statement : ∀ n m : ℕ, n + m = m + n := by
+  have h_main : ∀ n m : ℕ, n + m = m + n := by
+    intro n
+    intro m
+    induction m with
+    | zero =>
+      -- Base case: m = 0
+      simp
+    | succ m ih =>
+      -- Inductive step: assume the statement holds for m, prove for m + 1
+      simp_all [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
+      <;> omega
+  exact h_main
+  
 }
-```
+{% endhighlight %}
 
-For displaying code in a list item, you have to be aware of the indentation, as stated in [this FAQ](https://github.com/planetjekyll/quickrefs/blob/master/FAQ.md#q-how-can-i-get-backtick-fenced-code-blocks-eg--working-inside-lists-with-kramdown). You must indent your code by **(3 \* bullet_indent_level)** spaces. This is because kramdown (the markdown engine used by Jekyll) indentation for the code block in lists is determined by the column number of the first non-space character after the list item marker. For example:
-
-````markdown
-1. We can put fenced code blocks inside nested bullets, too.
-   1. Like this:
-
-      ```c
-      printf("Hello, World!");
-      ```
-
-   2. The key is to indent your fenced block in the same line as the first character of the line.
-````
-
-Which displays:
-
-1. We can put fenced code blocks inside nested bullets, too.
-   1. Like this:
-
-      ```c
-      printf("Hello, World!");
-      ```
-
-   2. The key is to indent your fenced block in the same line as the first character of the line.
-
-By default, it does not display line numbers. If you want to display line numbers for every code block, you can set `kramdown.syntax_highlighter_opts.block.line_numbers` to true in your `_config.yml` file.
-
-If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:
-
-{% raw %}
-{% highlight c++ linenos %} <br/> code code code <br/> {% endhighlight %}
-{% endraw %}
-
-The keyword `linenos` triggers display of line numbers.
-Produces something like this:
+Test 2.
 
 {% highlight c++ linenos %}
 
@@ -162,7 +121,7 @@ string myString;
     }
 
     return 0;
-
+    
 }
 
 {% endhighlight %}
