@@ -37,7 +37,6 @@ First, the model generated the following rewriting of the statement, making the 
 
 This is highly nontrivial statement to formalize in Lean! Even still, after four attempts, neumann-prover was able to produce a correct formalization of the theorem, which is given below.
 
-{% prettier-ignore %}
 {% highlight lean linenos %}
 import Mathlib
 namespace Demo
