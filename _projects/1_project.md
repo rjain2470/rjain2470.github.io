@@ -41,20 +41,20 @@ This is highly nontrivial statement to formalize in Lean! Even still, after four
 import Mathlib
 namespace Demo
 
-theorem stone_weierstrass_complex
-  (X : Type*) [TopologicalSpace X] [CompactSpace X]
-  (A : Set (X → Complex))
-  (A_cont : ∀ f in A, Continuous f)
-  (A_add : ∀ f g, f in A → g in A → f + g in A)
-  (A_mul : ∀ f g, f in A → g in A → f * g in A)
-  (A_smul : ∀ (c : Complex) f, f in A → (c _ f) in A)
-  (A_const : ∀ c : Complex, (fun _ => c) in A)
-  (A_conj : ∀ f, f in A → (star f) in A)
-  (A_sep : ∀ x y, x ≠ y → ∃ f in A, f x ≠ f y)
-  (A_nonvanish : ∀ x, ∃ f in A, f x ≠ 0) :
-  ∀ (f : X → Complex), Continuous f → ∀ (eps : Real), eps > 0 → ∃ g in A, ∀ x, abs(f x - g x) < eps
+theorem stone*weierstrass_complex
+(X : Type*) [TopologicalSpace X] [CompactSpace X]
+(A : Set (X → Complex))
+(A_cont : ∀ f in A, Continuous f)
+(A_add : ∀ f g, f in A → g in A → f + g in A)
+(A_mul : ∀ f g, f in A → g in A → f * g in A)
+(A_smul : ∀ (c : Complex) f, f in A → (c * f) in A)
+(A*const : ∀ c : Complex, (fun * => c) in A)
+(A_conj : ∀ f, f in A → (star f) in A)
+(A_sep : ∀ x y, x ≠ y → ∃ f in A, f x ≠ f y)
+(A_nonvanish : ∀ x, ∃ f in A, f x ≠ 0) :
+∀ (f : X → Complex), Continuous f → ∀ (eps : Real), eps > 0 → ∃ g in A, ∀ x, abs(f x - g x) < eps
 := by
-  sorry
+sorry
 
 end Demo
 
