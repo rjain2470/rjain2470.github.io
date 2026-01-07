@@ -30,6 +30,6 @@ Hello! My name is Ritik, and I am a second-year Ph.D. student in mathematics at 
 
 While at Fordham, I participated in an REU project in Summer 2023 under the supervision of Han-Bom Moon, studying rational points on random affine hypersurfaces over finite fields. Using combinatorial methods, I later extended these results to more general affine varieties. In 2022, I also interned at [Rogo](https://rogo.ai/), a finance/AI startup, where I supported early growth and training of internal models.
 
-My current research interests are in number theory and machine learning. I have also worked on autoformalization and autoreasoning in [Lean](https://en.wikipedia.org/wiki/Lean_(proof_assistant)).
+My current research interests are in number theory and machine learning. I have also worked on autoformalization and autoreasoning in [Lean](<https://en.wikipedia.org/wiki/Lean_(proof_assistant)>).
 
 You can contact me via email at <a href="mailto:ritik.jain@uconn.edu">ritik.jain@uconn.edu</a>.
