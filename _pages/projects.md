@@ -10,6 +10,7 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
+
 ### mathematics
 
 TBA
