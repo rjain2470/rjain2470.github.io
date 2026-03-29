@@ -10,6 +10,8 @@ In my spare time, I enjoy writing expository notes on various subjects.
 
 ### mathematics
 
+- <a href="/assets/pdf/MathPhysicsHistory.pdf" target="_blank">A Brief History of Mathematics and Physics</a> – A survey of major developments in mathematics and physics over the past 400 years, with an emphasis on the interplay between the two fields and the universal importance of symmetry. (10 pages)
+
 - <a href="/assets/pdf/AlgebraicGeometry.pdf" target="_blank">Algebraic Geometry</a> – Some introductory notes on classical algebraic geometry. (20 pages)
 
 - <a href="/assets/pdf/CyclotomicIntegers.pdf" target="_blank">The Ring of Cyclotomic Integers</a> – This note contains a derivation of the ring of integers in a cyclotomic field $\mathbb{Q}(\zeta_{n})$. By passing to the $p$-adic numbers, we are able to avoid many of the technicalities in the standard proof of this fact. (3 pages)
