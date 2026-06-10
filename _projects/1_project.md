@@ -28,7 +28,7 @@ Under the hood, Conductor operates via a multi-stage pipeline. First, queries ar
 
 ## Limitations 
 
-Conductor connects to devmirror.lmfdb.xyz, which may only have partial coverage of the full LMFDB. Moreover, since the LMFDB itself is not fully comprehensive, some data may simply be unavailable. Responses may also slow under heavy load, as queries are subject to API rate limits. Finally, Conductor is under active development, and you may encounter occasional errors or unexpected behavior. If you do, please open a GitHub issue.
+Conductor connects to devmirror.lmfdb.xyz, which may only have partial coverage of the full LMFDB. Moreover, since the LMFDB itself is not fully comprehensive, some data may simply be unavailable. Responses may also slow under heavy load, as queries are subject to API rate limits. Finally, Conductor is under active development, and you may encounter occasional errors or unexpected behavior. If you do, please [open a GitHub issue](https://github.com/rjain2470/conductor/issues).
 
 ## Future Work
 
