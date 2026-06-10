@@ -2,7 +2,7 @@
 layout: page
 title: conductor
 description: "A natural-language interface to the L-functions and Modular Forms Database (LMFDB)."
-img: assets/img/conductor_flowchart.png
+img: assets/img/hawaii.png
 importance: 1
 category: work
 related_publications: false
