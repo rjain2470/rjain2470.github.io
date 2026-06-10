@@ -12,6 +12,10 @@ In my spare time, I enjoy writing expository notes on various subjects.
 
 - <a href="/assets/pdf/MathPhysicsHistory.pdf" target="_blank">A Brief History of Mathematics and Physics</a> – A survey of major developments in mathematics and physics over the past 400 years, with an emphasis on the interplay between the two fields and the universal importance of symmetry. (10 pages)
 
+- <a href="/assets/pdf/AlmostIntegers.pdf" target="_blank">Almost Integers</a> – An introduction to the number theory behind anomolies such as $e^{\pi\sqrt{163}} \approx 26253741640768743.999\ldots$. (6 pages)
+
+- <a href="/assets/pdf/ModularCurves.pdf" target="_blank">Modular Curves</a> – An overview of the basic theory of modular curves as spaces of isomorphism classes of elliptic curves. (12 pages)
+
 - <a href="/assets/pdf/AlgebraicGeometry.pdf" target="_blank">Algebraic Geometry</a> – Some introductory notes on classical algebraic geometry. (20 pages)
 
 - <a href="/assets/pdf/CyclotomicIntegers.pdf" target="_blank">The Ring of Cyclotomic Integers</a> – This note contains a derivation of the ring of integers in a cyclotomic field $\mathbb{Q}(\zeta_{n})$. By passing to the $p$-adic numbers, we are able to avoid many of the technicalities in the standard proof of this fact. (3 pages)
