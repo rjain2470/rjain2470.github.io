@@ -3,7 +3,7 @@ layout: page
 title: lean-kg
 description: "An interactive dependency graph of mathlib4."
 img: assets/img/leankg_photo.jpg
-importance: 3
+importance: 4
 category: work
 ---
 
