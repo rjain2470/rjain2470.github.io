@@ -11,8 +11,15 @@ nav_order: 5
 <!-- ## Courses Taught -->
 
 **University of Connecticut**
-
-- Spring 2026: MATH 1132Q: Calculus I (TA)
-- Fall 2025: MATH 1132Q: Calculus I (TA)
+- Summer 2026: MATH 1131Q: Calculus I (TA)
+- Spring 2026: MATH 1131Q: Calculus I (TA)
+- Summer 2025: MATH 1071Q: Calculus for Business and Economics (TA)
+- Fall 2025: MATH 1131Q: Calculus I (TA)
 - Spring 2025: MATH 1132Q: Calculus II (TA)
 - Fall 2024: MATH 1070Q: Math for Business and Economics (TA)
+
+**Fordham University**
+- Spring 2024: MATH 2005: Multivariable Calculus II (Grader)
+
+### outreach
+Spring 2026: Mentored an undergraduate student through the Directed Reading Program (DRP) in a project related to elliptic curves and cryptography. <a href="/assets/pdf/drp.pdf" target="_blank">Slides</a>.
