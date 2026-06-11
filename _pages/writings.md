@@ -10,7 +10,7 @@ In my spare time, I enjoy writing expository notes on various subjects.
 
 ### mathematics
 
-- <a href="/assets/pdf/MathPhysicsHistory.pdf" target="_blank">A Brief History of Mathematics and Physics</a> – A survey of major developments in mathematics and physics over the past 400 years, with an emphasis on the interplay between the two fields and the universal importance of symmetry. (10 pages)
+- <a href="/assets/pdf/MathPhysicsHistory.pdf" target="_blank">A Brief History of Mathematics and Physics</a> – A timeline of major developments in mathematics and physics over the past 400 years, with an emphasis on the interplay between the two fields and the universal importance of symmetry. (10 pages)
 
 - <a href="/assets/pdf/AlmostIntegers.pdf" target="_blank">Almost Integers</a> – An introduction to the number theory behind the existence of anomolous numbers such as $e^{\pi\sqrt{163}}$, which are mysteriously close to being integers. (6 pages)
 
