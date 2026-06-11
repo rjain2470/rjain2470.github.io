@@ -22,4 +22,4 @@ nav_order: 5
 - Spring 2024: MATH 2005: Multivariable Calculus II (Grader)
 
 ### outreach
-Spring 2026: Mentored an undergraduate student through the Directed Reading Program (DRP) in a project related to elliptic curves and cryptography. <a href="/assets/pdf/drp.pdf" target="_blank">Slides</a>.
+Spring 2026: Mentored an undergraduate student through the Directed Reading Program (DRP) in a project related to elliptic curves and cryptography. <a href="/assets/pdf/drp.pdf" target="_blank">Slides</a>
