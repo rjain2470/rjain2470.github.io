@@ -6,7 +6,7 @@ nav: false
 nav_order: 6
 ---
 
-In my spare time, I enjoy writing expository notes. 
+In my spare time, I enjoy writing expository notes.
 
 ### machine learning
 
