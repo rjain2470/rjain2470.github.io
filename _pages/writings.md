@@ -18,7 +18,7 @@ In my spare time, I enjoy writing expository notes.
 
 - <a href="/assets/pdf/AlmostIntegers.pdf" target="_blank">Almost Integers</a> – An introduction to the number theory behind the existence of numbers such as $e^{\pi\sqrt{163}}$, which are mysteriously close to being integers. (6 pages)
 
-- <a href="/assets/pdf/Hartogs.pdf" target="_blank">Hartogs's Phenomenon</a> – An exposition of one of the most striking results in the theory of complex analysis in several variables (6 pages).
+- <a href="/assets/pdf/Hartogs.pdf" target="_blank">Hartogs's Phenomenon</a> – An exposition of one of the most striking results in the theory of complex analysis in several variables. (6 pages)
 
 - <a href="/assets/pdf/ModularCurves.pdf" target="_blank">Modular Curves</a> – An overview of the basic theory of modular curves as spaces of isomorphism classes of elliptic curves. (12 pages)
 
