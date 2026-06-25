@@ -7,7 +7,9 @@ nav: true
 nav_order: 3
 ---
 
-1. [Distribution of the number of zeros of polynomials over a finite field](https://arxiv.org/abs/2308.14580), with Han-Bom Moon and Peter Wu <br />(Involve, 18-4, 707-718, 2025). DOI: [https://doi.org/10.2140/involve.2025.18.707](https://doi.org/10.2140/involve.2025.18.707).
+1. Enumerating Maass newforms by symbolic regression, with Yang-Hui He, Kyu-Hwan Lee, Yau Liu, and Tom Oliver, in preparation.
+
+2. [Distribution of the number of zeros of polynomials over a finite field](https://arxiv.org/abs/2308.14580), with Han-Bom Moon and Peter Wu <br />(Involve, 18-4, 707-718, 2025). DOI: [https://doi.org/10.2140/involve.2025.18.707](https://doi.org/10.2140/involve.2025.18.707).
 
 ### preprints
 
